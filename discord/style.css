@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  color: grey;
+  background-color: rgb(48, 46, 46);
+}
+
+.container {
+  display: grid;
+  grid-template:
+    "servers mutuals nav-bar" 50px
+    "servers mutuals messages" 1fr
+    "servers mutuals write" 50px/
+    50px 100px 1fr;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.servers {
+  grid-area: servers;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.mutuals {
+  grid-area: mutuals;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.nav-bar {
+  grid-area: nav-bar;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.messages {
+  grid-area: messages;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.write {
+  grid-area: write;
+  border: 2px solid black;
+  margin: 10px;
+}

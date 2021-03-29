@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+}
+
+.header {
+  text-align: left;
+  margin: 5px;
+}
+
+img {
+  width: 100px;
+}
+
+.container {
+  display: grid;
+  grid-template:
+    "profile post news" 100px
+    "work time-line recommendations" 200px
+    "recent time-line follow-them" 200px/
+    100px 300px 100px;
+
+  background-color: lightgrey;
+}
+
+.profile {
+  grid-area: profile;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.post {
+  grid-area: post;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.news {
+  grid-area: news;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.work {
+  grid-area: work;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.time-line {
+  grid-area: time-line;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.recommendations {
+  grid-area: recommendations;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.recent {
+  grid-area: recent;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.follow-them {
+  grid-area: follow-them;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+@media screen and (max-width>800px) {
+  .container {
+    display: grid;
+    grid-template:
+      "profile post news" 200px
+      "work time-line recommendations" 200px
+      "recent time-line follow-them" 200px/
+      100px 300px 100px;
+}
